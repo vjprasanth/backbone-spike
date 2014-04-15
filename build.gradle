@@ -1,0 +1,16 @@
+
+allprojects {
+    apply plugin: 'idea'
+    group = 'uk.co.malbec.cascade'
+    version = '1.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+

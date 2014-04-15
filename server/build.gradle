@@ -1,0 +1,12 @@
+apply plugin: 'groovy'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.1.1"
+    compile "io.dropwizard:dropwizard-core:0.7.0"
+
+    compile "com.sun.jersey:jersey-client:1.12"
+
+
+}

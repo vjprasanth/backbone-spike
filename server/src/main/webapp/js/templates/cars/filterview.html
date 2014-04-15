@@ -1,0 +1,11 @@
+
+<div class="panel-heading"><h1>Car Filter</h1></div>
+<div class="panel-body">
+<table class="table table-striped table-bordered table-condensed">
+    <% _.each( model, function( filter ){ %>
+    <tr>
+        <td><%=filter%><input type="button" id="delete_filter" data-filter="<%=filter%>" name="<%=filter%>"  value="delete"></td>
+    </tr>
+    <% });%>
+</table>
+</div>

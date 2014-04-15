@@ -1,0 +1,14 @@
+<div class="panel-heading"><h1>Cars</h1> <input id="addCarForm" name="addCarForm" type="button" value="Add"></div>
+<div class="panel-body">
+    <table class="table table-striped table-bordered table-condensed">
+        <% _.each( model, function( car ){ %>
+        <tr>
+            <td><%=car.id%></td>
+            <td><%=car.name%></td>
+            <td><input id="updateCar" name="updateCar" data-id="<%=car.id%>" type="button" value="Update"></td>
+            <td><input id="deleteCar" name="deleteCar" data-id="<%=car.id%>" type="button" value="Delete"></td>
+        </tr>
+        <% });%>
+
+    </table>
+</div>
